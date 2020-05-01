@@ -1,18 +1,9 @@
-def fizzbuzz(num):
-  if not num % 5 and not num % 3:
-    print("FizzBuzz")
-  elif not num % 5:
-    print("Buzz")
-  elif not num % 3:
-    print("Fizz")
-  else:
-    print(str(num))
-
-
-while True:
-  try:
-    user_input = int(input("Some input please: "))
-    fizzbuzz(user_input)
-  except EOFError:
-    print()
-    break
+def fizz_buzz_func(n):
+    if n % 15 == 0:
+        print('FizzBuzz')
+    elif n % 3 == 0:
+        print('Fizz')
+    elif n % 5 == 0:
+        print('Buzz')
+    else:
+        print(str(n))
